@@ -16,7 +16,7 @@
   /* **************************************************
     USER VARIABLES
 	************************************************** */
-  $botId   = "c0be2bb2937d15c3ead24791fb";
+  $botId   = "b088e58d325368c639fef05dbd";
   $groupMe = new groupMeApi();
 
 
@@ -116,7 +116,7 @@
   if (iStr($p['name'],array('botname')) === false) { // This post wasn't made by the bot, so we'll continue (prevents infinite loop)
 
     // Did the user mention the bot by name? Check multiple variations of the bot's name
-    if (iStr($text,array("friend","super friend","super friend bot"))) {
+    if (iStr($text,array("!pokedex"))) {
 
       /* **************************************************
         Check to see what they said, then respond accordingly
