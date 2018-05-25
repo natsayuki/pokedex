@@ -123,7 +123,7 @@
 			************************************************** */
 
 
-      if (iStr($text,array('!pokedex'))){
+      if (iStr($text,array(''))){
         // Good Job
         $pokemon = array_pop(explode(' ', $text));
         $entry = json_decode(file_get_contents('http://pokeapi.co/api/v2/pokemon/' . $pokemon), true);
