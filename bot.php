@@ -131,7 +131,7 @@
           $json = json_decode(file_get_contents($entry['species']['url']), true);
           $flavor = $json['flavor_text_entries'];
           foreach($flavor as $entry){
-          if($entry['version']['name'] == 'blue' && $entry['language']['name'] == 'en'){
+          if($entry['language']['name'] == 'en'){
             $strResponse = $entry['flavor_text'];
           }
           }
